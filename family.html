@@ -1,0 +1,278 @@
+<html>
+<head>
+<title>MY FAMILY</title>
+<body background="image/bg5.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<br>
+<center>
+<a href="index.html"><img src="button/HOMEPAGE.png"></a>
+<a href="BIODATA.html"><img src="button/MYBIODATA.png"></a>
+<a href="myexperience.html"><img src="button/EXPERIENCE.png"></a>
+<a href="EDUCATION.html"><img src="button/EDUCATION.png"></a>
+<a href="family.html"><img src="button/FAMILY.png"></a>
+<a href="GALLERY.html"><img src="button/GALLERY.png"></a></center>
+<style>
+body {
+  background-size: 100%;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+h1 {
+  color:black;
+  font-family: "arial";
+  line-height:1.5;
+  text-align:center;
+  font-size: 20px
+}
+h2 {
+  color:pink;
+  font-family: "lucida handwriting";
+  line-height:1.5;
+  text-align:center;
+  font-size: 65px;
+  background-color:black;
+}
+
+
+th {
+    font-size: 15px;
+    font-family: "Arial";
+    line-height:1.5;
+  }
+tr {
+    font-size: 15px;
+    font-family: "Arial";
+    line-height:1.5;
+  }
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: black;
+  color: Pink;
+  font-family: "verdana";
+  font-size: 15px;
+}
+</style>
+</head>
+
+
+<body>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="image/P.jpeg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <img src="image/P1.jpeg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="image/P2.jpeg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</head>
+
+<br>
+<center>
+<img src="image/fam.jpeg" width="45%" height="55%">
+<h1>This is a picture of my family. I have 6 siblings and a mother and a father.<br>
+ We live in Taman Suria Indah located in Tanjong Karang, Selangor.</h1>
+</center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2> MY LOVELY FAMILY</h2>
+<table border="1" align="center">
+<th rowspan="10" bgcolor="cadetblue">ABOUT MY FAMILY</th>
+<th bgcolor="rosybrown">Relationship</th>
+<th bgcolor="rosybrown">Biodata</th>
+</tr>
+<tr align="left">
+<td bgcolor="pink"><center><b>MY FATHER</b></center></td>
+<td bgcolor="gainsboro"><li><b>NAME :</b> Romidi Bin Kasim <li> <b>DATE OF BIRTH :</b> 16 <sup>th</sup> November 1969
+<li><b> OCCUPATION :</b> Senior manager at KHIND<b></td>
+</tr>
+
+<tr align="left">
+<td bgcolor="pink"><center><b>MY MOTHER</b></center></td>
+<td bgcolor="gainsboro"><li><b>NAME :</b> Rohani Binti Dahlan <li> <b>DATE OF BIRTH :</b> 2 <sup>nd</sup> January 1976
+<li><b> OCCUPATION :</b> Housewife <b></td>
+</tr>
+
+<tr align="left">
+<td bgcolor="pink"><center><b>MY SISTER</b></center></td>
+<td bgcolor="gainsboro"><li><b>NAME:</b> Nur Azra Azmina <li> <b>DATE OF BIRTH:</b> 1 <sup>nd</sup> January 1998
+<li><b> STUDENT:</b> University Al-Azhar<b></td>
+</tr>
+
+<tr align="left">
+<td bgcolor="pink"><center><b>MY BROTHER</b></center></td>
+<td bgcolor="gainsboro"><li><b>NAME:</b> Afiq Mirza <li> <b>DATE OF BIRTH:</b> 25 <sup>th</sup> October 1999
+<li><b> Occupation :</b> Part time work<b></td>
+</tr>
+
+<tr align="left">
+<td bgcolor="pink"><center><b>MY YOUNGER BROTHER</b></center></td>
+<td bgcolor="gainsboro"><li><b>NAME:</b> Aliff Haziq <li> <b>DATE OF BIRTH:</b> 3 <sup>rd</sup> December 2002
+<li><b> STUDENT:</b> Institut Kemahiran Islam  Darul Ridzwan<b></td>
+</tr>
+
+<tr align="left">
+<td bgcolor="pink"><center><b>MY YOUNGER SISTER</b></center></td>
+<td bgcolor="gainsboro"><li><b>NAME:</b> Nur Afiqah <li> <b>DATE OF BIRTH:</b> 26 <sup>th</sup> December 2005
+<li><b> STUDENT:</b> Sekolah Menengah Agama Jeram<b></td>
+</tr>
+
+<tr align="left">
+<td bgcolor="pink"><center><b>MY YOUNGER BROTHER</b></center></td>
+<td bgcolor="gainsboro"><li><b>NAME:</b> Amal Wafiy<li> <b>DATE OF BIRTH:</b> 25 <sup>th</sup> January 2008
+<li><b> STUDENT:</b> Sekolah Kebangsaan Sungai Terap<b></td>
+</tr>
+
+
+</table>
+<br>
+<br>
+<footer>
+<br>
+  <h7>My Social Media</h7>
+<br>
+<br>
+<a href="https://www.instagram.com/tir4aaa/" target="_blank"><img src="button/icon.png" style="width:50px;height:50px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://twitter.com/nvrathirahhh"  target="_blank"><img src="button/icon2.png" style="width:50px;height:50px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.youtube.com/channel/UCJDVGPiNu-kqeVle6sTMeQg" target="_blank"><img src="button/icon3.png" style="width:50px;height:50px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.facebook.com/nurathirah.romidi" target="_blank"><img src="button/icon1.png" style="button/width:50px;height:50px;"></a>
+<br>
+<p>This website developed for IMD311 by Nur Athirah<p>
+<br>
+<br>
+</footer>
+</body>
+</html>
+ 
